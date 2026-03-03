@@ -1,0 +1,12 @@
+import agecheck.AgeCheck;
+public class Main {
+    public static void main(String[] args) {
+        AgeCheck u1 = new AgeCheck("Durga", 21);
+        AgeCheck u2 = new AgeCheck("Ravi", 16); 
+        Thread t1 = new Thread(u1);
+        Thread t2 = new Thread(u2);
+        t1.start();
+        t2.start();
+        System.out.println("Age Verification System Started...");
+    }
+}
